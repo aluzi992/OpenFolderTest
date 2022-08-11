@@ -16,7 +16,25 @@
     </ContentPage.Resources>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label VerticalOptions="Center">20190907_102115.jpg(This DONT show in gallery):</Label>
+        <Image Grid.Row="1" BackgroundColor="LightBlue"  x:Name="img1" Source="http://oa.winfreeinfo.com:8899/20190907_102115.jpg" />
+        <Button Grid.Row="1" Text="Save to gallery" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked2"/>
+
+        <Label Grid.Row="2" VerticalOptions="Center">20190907_102115_resize.jpg(This will show in gallery):</Label>
+        <Image Grid.Row="3" x:Name="img2" BackgroundColor="LightGreen" Source="http://oa.winfreeinfo.com:8899/20190907_102115_resize.jpg" />
+        <Button Grid.Row="3" Text="Save to gallery" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked3"/>
+        <!--
+        20190907_183423_resize.jpg
+        <Image x:Name="img1" Source="https://cdn.pixabay.com/photo/2017/06/08/14/43/forest-2383796_960_720.jpg" />
+        <Image x:Name="img1" Source="https://images.pexels.com/photos/13095218/pexels-photo-13095218.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600&amp;lazy=load" />
         <Button Text="Open Folder" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+        -->
     </Grid>
 
 </ContentPage>
